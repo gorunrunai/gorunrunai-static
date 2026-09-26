@@ -1,0 +1,23 @@
+Copyright (c) 2026 GoRunRun. All rights reserved.
+
+This repository holds the source of the GoRunRun Local AI website (https://gorunrunai.github.io):
+its text, design, styles, screenshots, images, videos, logos and other content (the "Website
+Materials").
+
+The Website Materials are proprietary and are not open source. No license or other right to copy,
+modify, publish, distribute, sublicense or create derivative works from them is granted, except as
+needed to view the website in a web browser, or as GoRunRun expressly permits in writing.
+
+"GoRunRun", "GoRunRun Local AI" and the GoRunRun logo are trademarks of GoRunRun.
+
+Separate licenses
+-----------------
+- The GoRunRun Local AI software that this website describes is a separate project, published at
+  https://github.com/gorunrunai/local-ai under the Apache License 2.0. Nothing in this notice limits
+  the rights that license grants for the software.
+- The Just the Docs theme, which the site loads as a remote theme, is licensed under the MIT
+  License by its authors (https://github.com/just-the-docs/just-the-docs).
+- The Bricolage Grotesque font, loaded from Google Fonts, is licensed under the SIL Open Font
+  License 1.1.
+
+Questions or permission requests: amit@gorunrun.ai

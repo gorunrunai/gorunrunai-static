@@ -1,0 +1,15 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+Gemfile.lock
+.DS_Store
+# AI assistant and editor files (kept locally, never published)
+CLAUDE.md
+.claude/
+AGENTS.md
+.cursor/
+.vscode/
+.idea/
+.bundle/

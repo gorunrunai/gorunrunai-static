@@ -1,0 +1,60 @@
+// Headings in the wordmark's typeface (Bricolage Grotesque); body text stays the system font.
+h1, h2, h3, .site-title, .hero-title { font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -0.02em; }
+h1 { font-weight: 800 !important; letter-spacing: -0.035em; }
+h2, h3 { font-weight: 600 !important; }
+.main-content a:not(.btn) { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.site-logo { background-size: contain; min-height: 2.5rem; }
+
+.hero-lead { font-size: 1.25rem !important; line-height: 1.5; color: #2b2a28; }
+.screenshot { border: 1px solid #e3ded3; border-radius: 10px; box-shadow: 0 4px 16px rgba(23, 23, 26, 0.08); max-width: 100%; height: auto; }
+.phone { max-width: 300px; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.feature-grid > div { border: 1px solid #e3ded3; border-radius: 10px; padding: 1rem 1.1rem; background: #fff; }
+.feature-grid h3 { margin-top: 0 !important; font-size: 1.05rem !important; }
+.feature-grid p { margin-bottom: 0; font-size: 0.95rem; }
+pre.install { font-size: 0.95rem; }
+.brand-hero { display: block; width: 100%; max-width: 440px; height: auto; margin: 0.5rem 0 1.5rem; }
+
+// "Works completely offline": the site's headline promise. Ink on paper, inverted for the band.
+.offline-pill { display: inline-flex; align-items: center; gap: 0.3em; margin: 0 0 1.25rem; padding: 0.1em 0.55em 0.15em 0.45em; border: 3px solid #17171a; border-radius: 999px; color: #17171a;
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 800; letter-spacing: -0.035em; line-height: 1.2; }
+@media (max-width: 40rem) { .offline-pill { white-space: nowrap; font-size: min(6.3vw, 1.97rem) !important; } }
+.free-line { margin: -0.25rem 0 1rem !important; font-size: 1.45rem !important; line-height: 1.35; color: #2b2a28; max-width: 40rem; }
+.free-line strong { font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 800; letter-spacing: -0.02em; color: #17171a; }
+@media (max-width: 40rem) { .free-line { font-size: 1.2rem !important; } }
+.offline-pill svg { flex-shrink: 0; width: 0.85em; height: 0.85em; }
+.offline-band { margin: 2.5rem 0; padding: 2rem 2rem 1.5rem; border-radius: 14px; background: #17171a; color: #f4f1ea; }
+.offline-band h2 { margin-top: 0.25rem !important; color: #fff; font-size: 2rem !important; font-weight: 800 !important; letter-spacing: -0.03em; }
+.offline-band h3 { margin-top: 0 !important; color: #fff; font-size: 1.05rem !important; }
+.offline-band p { font-size: 1.1rem; color: #e3ded3; max-width: 40rem; }
+.offline-band .offline-kicker { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #f4f1ea; }
+.offline-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.5rem; margin-top: 1.25rem; }
+.offline-cols ul { margin: 0; padding-left: 1.1rem; }
+.offline-cols li { color: #e3ded3; margin-bottom: 0.3rem; }
+.offline-cols li::before { color: #e3ded3 !important; }
+@media (max-width: 40rem) { .offline-band { padding: 1.5rem 1.25rem 1rem; } .offline-band h2 { font-size: 1.6rem !important; } }
+
+// A screenshot framed as the app's window. The real video sits exactly over the screenshot's player,
+// so its play button works (positions are percentages of the screenshot).
+.app-window { margin: 1.5rem 0 1rem; max-width: 960px; border: 1px solid #d9d3c6; border-radius: 12px; overflow: hidden; background: #f4f1ea;
+  box-shadow: 0 10px 40px rgba(23, 23, 26, 0.14), 0 2px 6px rgba(23, 23, 26, 0.06); }
+.window-bar { display: flex; align-items: center; gap: 7px; height: 30px; padding: 0 12px; background: #ebe6db; border-bottom: 1px solid #d9d3c6; }
+.window-bar span { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; }
+.window-bar span:nth-child(2) { background: #febc2e; }
+.window-bar span:nth-child(3) { background: #28c840; }
+.window-bar em { flex: 1; margin-right: 45px; text-align: center; font-style: normal; font-size: 0.8rem; color: #4a4740; }
+.app-shot { position: relative; }
+.app-shot img { display: block; width: 100%; height: auto; }
+.app-shot-video { position: absolute; object-fit: contain; background: #000; border-radius: 4px; }
+video.loop-anim { display: block; width: 100%; max-width: 720px; height: auto; background: #0b0b0f; }
+
+// "Which Mac?": options per memory size, with a green tick or a red cross.
+.opt { display: block; position: relative; min-width: 12rem; padding-left: 1.35em; line-height: 1.45; margin: 0.1em 0; }
+.opt::before { position: absolute; left: 0; font-weight: 800; }
+.opt.yes::before { content: "✓"; color: #1a7f37; }
+.opt.no { color: #6b665c; }
+.opt.no::before { content: "✕"; color: #c0362c; }
+.opt em { color: #6b665c; font-size: 0.9em; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.free-line + .free-line { margin-top: 0 !important; margin-bottom: 1.5rem !important; }
